@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+    <nav>
+       
+            
+            <ul class="sidebar">
+                <li><a class="menu" onclick=hideSidebar()><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="Soham Datta" onclick="toggleMenu()">Soham Datta</a></li>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="Experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="Projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="Contact" onclick="toggleMenu()">Contact</a></li>
+                
+            </ul>
+        
+    </nav>
+    <nav>
+        
+           
+            <ul>
+                <li><a href="#content" onclick="toggleMenu()">Soham Datta</a></li>
+                <li><a href="#about" onclick="toggleMenu()"class="hideOnMobile">About</a></li>
+                <li><a href="Experience" onclick="toggleMenu()"class="hideOnMobile">Experience</a></li>
+                <li><a href="Projects" onclick="toggleMenu()"class="hideOnMobile">Projects</a></li>
+                <li><a href="Contact" onclick="toggleMenu()"class="hideOnMobile">Contact</a></li>
+                <li><a class="menu" href="#" onclick=showSidebar()><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+             
+            </ul>
+       
+            <script>
+                function showSidebar() {
+                    const sidebar = document.querySelector('.sidebar');
+                    // Add logic to show/hide the sidebar as needed
+               sidebar.style.display='flex'
+                }
+                function hideSidebar() {
+                    const sidebar = document.querySelector('.sidebar');
+                    // Add logic to show/hide the sidebar as needed
+               sidebar.style.display='none'
+                }
+            </script>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+            <h1>I am <br>Soham Datta<br/> </h1>
+            <p>A Cyber Security Enthusiast</p>
+            <p>Currently studying in The Neotia University</p>
+        </div>
+        <div class="image-container">
+            <img src="SOHAMPHOTO (1).jpg" alt="Responsive Image">
+        </div>
+    </div>
+    
+    <div class="buttons-and-social-container">
+        <!-- Buttons Container -->
+        <div class="btn-container">
+            <!-- Button 1: Download CV -->
+            <button class="btn btn-color-2" onclick="window.open('SOHAM_DATTA-RESUME (4).pdf')">
+                Download CV
+            </button>
+    
+            <!-- Button 2: Contact Info -->
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                Contact Info
+            </button>
+        </div>
+    
+        <!-- Social Icons Container -->
+        <div id="socials-container">
+            <!-- LinkedIn Icon -->
+            <img
+                src="linkedin.png"
+                alt="LinkedIn"
+                class="icon"
+                onclick="location.href='https://linkedin.com/'"
+            />
+    
+            <!-- Github Icon -->
+            <img
+                src="github.png"
+                alt="GitHub"
+                class="icon"
+                onclick="location.href='https://github.com/'"
+            />
+        </div>
+    </div>
+    
+
+    <script>
+        // JavaScript functions
+        function downloadCV() {
+            // Replace with the actual path to your resume PDF
+            window.open('SOHAM_DATTA-RESUME (4).pdf');
+        }
+    
+        function navigateToContact() {
+            // Replace with the actual ID or URL for your contact section
+            window.location.href = './#contact';
+        }
+    
+        function openLink(url) {
+            // Open a link in a new tab
+            window.open(url, '_blank');
+        }
+    </script>
+<span> </span>
+<span> </span>
+<span> </span>
+<span> </span>
+<span> </span>
+
+</section>
+<section id="about">
+  <p class="section__text__p1">Get To Know More</p>
+  <h1 class="title">About Me</h1>
+  <div class="section-container">
+    
+    <div class="about-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <img
+            src="experience.png"
+            alt="Experience icon"
+            class="icon"
+          />
+          <h3>Experience</h3>
+          <p>2+ years <br />Frontend Development</p>
+        </div>
+        <div class="details-container">
+          
+            <img
+            src="education.png"
+            alt="Education icon"
+            class="icon"
+          />
+          <h3>Education</h3>
+          <p>B.Tech in CSE <br />Cyber Security</p>
+
+
+
+
+</body>
+</html>
